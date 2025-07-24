@@ -16,6 +16,12 @@
 		A2F597422E3106AF00709DAA /* SwiftShortsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F597412E3106AF00709DAA /* SwiftShortsTests.swift */; };
 		A2F5974C2E3106AF00709DAA /* SwiftShortsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5974B2E3106AF00709DAA /* SwiftShortsUITests.swift */; };
 		A2F5974E2E3106AF00709DAA /* SwiftShortsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5974D2E3106AF00709DAA /* SwiftShortsUITestsLaunchTests.swift */; };
+		A2F597612E31584800709DAA /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F597602E31584800709DAA /* VideoCollectionViewCell.swift */; };
+		A2F597632E315C1700709DAA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F597622E315C1700709DAA /* NetworkManager.swift */; };
+		A2F597652E315C2700709DAA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F597642E315C2700709DAA /* Request.swift */; };
+		A2F597672E315CD000709DAA /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F597662E315CD000709DAA /* VideoModel.swift */; };
+		A2F5976A2E31641400709DAA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F597692E31641400709DAA /* Constants.swift */; };
+		A2F5976C2E31654200709DAA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F5976B2E31654200709DAA /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		A2F597472E3106AF00709DAA /* SwiftShortsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftShortsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F5974B2E3106AF00709DAA /* SwiftShortsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftShortsUITests.swift; sourceTree = "<group>"; };
 		A2F5974D2E3106AF00709DAA /* SwiftShortsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftShortsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A2F597602E31584800709DAA /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2F597622E315C1700709DAA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A2F597642E315C2700709DAA /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		A2F597662E315CD000709DAA /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		A2F597692E31641400709DAA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A2F5976B2E31654200709DAA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +111,14 @@
 		A2F597262E3106AD00709DAA /* SwiftShorts */ = {
 			isa = PBXGroup;
 			children = (
-				A2F597272E3106AD00709DAA /* AppDelegate.swift */,
-				A2F597292E3106AD00709DAA /* SceneDelegate.swift */,
-				A2F5972B2E3106AD00709DAA /* HomeViewController.swift */,
-				A2F597332E3106AF00709DAA /* Assets.xcassets */,
+				A2F5976D2E3210BC00709DAA /* Resources */,
+				A2F597682E31640600709DAA /* Constant */,
+				A2F5975A2E3157CA00709DAA /* Model */,
+				A2F5975C2E3157D900709DAA /* View */,
+				A2F5975F2E31581200709DAA /* Cells */,
+				A2F5975B2E3157D100709DAA /* ViewModel */,
+				A2F5975D2E3157E600709DAA /* NetworkLayer */,
+				A2F5975E2E3157F400709DAA /* Services */,
 				A2F597352E3106AF00709DAA /* LaunchScreen.storyboard */,
 				A2F597382E3106AF00709DAA /* Info.plist */,
 				A2F597302E3106AD00709DAA /* SwiftShorts.xcdatamodeld */,
@@ -125,6 +141,72 @@
 				A2F5974D2E3106AF00709DAA /* SwiftShortsUITestsLaunchTests.swift */,
 			);
 			path = SwiftShortsUITests;
+			sourceTree = "<group>";
+		};
+		A2F5975A2E3157CA00709DAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2F597662E315CD000709DAA /* VideoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A2F5975B2E3157D100709DAA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5976B2E31654200709DAA /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A2F5975C2E3157D900709DAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2F5972B2E3106AD00709DAA /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2F5975D2E3157E600709DAA /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A2F597622E315C1700709DAA /* NetworkManager.swift */,
+				A2F597642E315C2700709DAA /* Request.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		A2F5975E2E3157F400709DAA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A2F5975F2E31581200709DAA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A2F597602E31584800709DAA /* VideoCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A2F597682E31640600709DAA /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				A2F597692E31641400709DAA /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		A2F5976D2E3210BC00709DAA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2F597272E3106AD00709DAA /* AppDelegate.swift */,
+				A2F597292E3106AD00709DAA /* SceneDelegate.swift */,
+				A2F597332E3106AF00709DAA /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,10 +339,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2F597632E315C1700709DAA /* NetworkManager.swift in Sources */,
 				A2F597322E3106AD00709DAA /* SwiftShorts.xcdatamodeld in Sources */,
 				A2F5972C2E3106AD00709DAA /* HomeViewController.swift in Sources */,
+				A2F5976C2E31654200709DAA /* HomeViewModel.swift in Sources */,
+				A2F597672E315CD000709DAA /* VideoModel.swift in Sources */,
 				A2F597282E3106AD00709DAA /* AppDelegate.swift in Sources */,
+				A2F597652E315C2700709DAA /* Request.swift in Sources */,
+				A2F597612E31584800709DAA /* VideoCollectionViewCell.swift in Sources */,
 				A2F5972A2E3106AD00709DAA /* SceneDelegate.swift in Sources */,
+				A2F5976A2E31641400709DAA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
